@@ -3,7 +3,7 @@ import pandas as pd
 from io import BytesIO
 
 st.set_page_config(layout="wide", page_title="Đánh giá TTCS Sán Chỉ")
-st.title("📊 Ứng Dụng Đánh Giá Hiệu Quả Truyền Thông Chính Sách")
+st.title("📊 Ứng dụng Thí điểm Chỉ số Đánh giá hiệu quả Truyền thông chính sách")
 
 # === HÀM KIỂM TRA LOGIC (Chỉ bôi đỏ phần sai, không báo lỗi Xcode) ===
 def check_logic(tu_so, mau_so, nhan):
@@ -124,7 +124,6 @@ else: hop_le_x4 = False
 
 # === 5. TỔNG KẾT VÀ XẾP LOẠI ===
 st.header("5. Tổng Chỉ Số Hiệu Quả (X)")
-st.write("Thiết lập trọng số (Tổng w1 + w2 + w3 + w4 phải bằng 1.0)")
 cw1, cw2, cw3, cw4 = st.columns(4)
 with cw1: w1 = st.number_input("Trọng số w1", value=0.2)
 with cw2: w2 = st.number_input("Trọng số w2", value=0.3)
